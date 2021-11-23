@@ -1,0 +1,73 @@
+:root{
+/* # Front-end Style Guide ## Layout The designs were created to the following widths: */
+ --Mobile:375px;
+  --Desktop:1440px;
+   /* ## Colors  */
+   /* ### Primary  */
+   --Soft-blue:hsl(215, 51%, 70%);
+    --Cyan:hsl(178, 100%, 50%);
+     /* ### Neutral */
+      --Very-dark-blue-main-BG:hsl(217, 54%, 11%);
+       --Very-dark-blue-card-BG:hsl(216, 50%, 16%);
+        --Very-dark-blue-line: hsl(215, 32%, 27%);
+         --White:hsl(0, 0%, 100%);
+          /* ## Typography ### Body Copy */
+           --Font-size-paragraph: 18px;
+}
+*{
+    margin: 0;
+}
+img{
+ padding: 1px;
+    object-fit: contain;
+}
+.app_container{
+    background-color: var(--Very-dark-blue-main-BG);
+    height: 100vh;
+    position: relative;
+}
+.card{
+
+    background-color: var(--Very-dark-blue-card-BG);
+margin-left: auto;
+position: absolute;
+top: 50%;
+left: 50%;
+margin-right: -50%;
+transform: translate(-50%,-50%);
+border-radius: 10px;
+}
+
+.logo{
+    object-fit: contain;
+margin: 10px;
+    width: 300px;
+}
+h1{
+    color: var(--White);
+    margin-bottom: 15px;
+}
+p{
+    color: var(--Soft-blue);
+    font-size: var(--Font-size-paragraph);
+}
+.app_units ,.app_currency ,.app_days ,.avatar{
+    display: flex;
+justify-content: space-between;
+padding: 5px;
+}
+.app_units{
+    margin-top: 15px;
+}
+.avatar{
+    padding: 20px;
+    border-top: 1px solid var(--Very-dark-blue-line);
+justify-content: center;
+align-items: center;
+}
+.avatar_image{
+    width: 50px;
+    border: 1px solid var(--White);
+    border-radius: 50%;
+    margin-right: 20px;
+}
